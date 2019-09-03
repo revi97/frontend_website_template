@@ -7,6 +7,13 @@ body{
     background-color: #f4f4f4;
 
 }
+.dark{
+    padding: 15px;
+    background: rgb(90, 89, 89);
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 .container{
     width: 80%;
     margin: auto;
@@ -51,4 +58,141 @@ header nav{
 header .highlight, header .current a{
     color: #e8491d;
     
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height: 400px;
+    background:url('./img/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #fff;
+
+}
+#shocase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+/* Subscribe box */
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: #837b79;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+
+#boxes{
+    margin: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+
+}
+#boxes .box img{
+    width: 90px;
+}
+
+/* About Us page''s Sidebar*/
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+
+    width: 90%;
+    padding: 5px;
+
+}
+
+/* Contact Us*/
+ul#contact{
+    list-style: none;
+    padding: 20px;
+    border: #837b79 solid 1px;
+    margin-bottom: 5px;
+    background: #f4f4f4;
+}
+
+footer{
+    padding: 15px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* optimze for different widths*/
+
+@media(max-width : 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
